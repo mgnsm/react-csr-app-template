@@ -1,0 +1,10 @@
+{
+  "moduleNameMapper": {
+    "^(?!.*\\.module\\.(css|sass|scss)$).*\\.(css|sass|scss)$": "<rootDir>/tests/cssMock.js",
+    "^.+\\.(gif|jpg|jpeg|png)$": "<rootDir>/tests/fileMock.js",
+    "^.+\\.svg\\?(asset)$": "<rootDir>/tests/fileMock.js",
+    "^.+\\.svg$": "<rootDir>/tests/svgrMock.js",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "testEnvironment": "jsdom"
+}
